@@ -1,0 +1,620 @@
+
+h1{
+    font-family: Roboto;
+    font-size: 50px;
+    
+}
+
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+p{
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+h1,h2,h3,p,a,li{
+    font-weight: normal;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.App{
+    width: 1440px;
+    margin: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.main{
+    // главная страница
+    &__feat{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 100px;
+        margin-right: 100px;
+        &_box{
+            width: 361px;
+            height: 276px;
+            border-radius: 30px;
+            background-color: white;
+            color: #0090D9!important;
+            :first-child{
+                width: 62px;
+                height: 62px;
+                padding-top: 23px;
+                padding-bottom: 16px;
+            }
+            :last-child{
+                width: 311px;
+                height: 95px;
+                padding-top: 17px;
+                text-align: left;
+                margin: auto;
+            }
+        }
+    }
+
+    &__studLife{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        background-color: white;
+        p{
+            text-transform: uppercase;
+        }
+        &_box{
+            width: 360px;
+            height: 438px;
+            h2{
+                margin-top: 84px;
+                margin-left: 40px;
+                text-align: left;
+                color: #0090D9;
+            }
+
+            &_text{
+                display: flex;
+                padding-left: 40px;
+                padding-bottom: 50px;
+                margin-top: 211px;
+                color: #0090D9;
+            }
+            p:first-child{
+                margin-top: 369px;
+                color: white;
+            }
+        }
+    }
+
+
+
+    &__banbot{
+      display: flex;
+      margin-left: 100px;
+      margin-top: 83px;
+      width: 1240px;
+      height: 204px;
+      background-color: white;
+      border-radius: 30px;
+      justify-content: center;
+      // text-align: center;
+      &_text{
+        color: #0090D9;
+        margin: 43px 92px 43px 92px;
+      }
+    }
+
+    &__edtitle{
+      text-align: left;
+      color: white;
+      margin-top: 52px;
+      margin-left: 119px;
+    }
+
+
+
+
+
+    &__sl{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-left: 100px;
+      margin-right: 100px;
+
+
+      &_title{
+        margin-top: 50px;
+        margin-bottom: 10px;
+      }
+
+      &_sport{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 493px 656px;
+        gap: 52px;
+        text-align: left;
+
+        &_block{
+          margin-top: 35px;
+        }
+      }
+      &_block{
+        margin-top: 60px;
+        display: flex;
+        gap: 40px;
+
+
+        &_left{
+          position: relative; 
+          width: 600px;
+          height: 500px;
+          overflow: hidden;
+          transition: transform 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          &_image{
+            width: 100%;
+            height: 100%;
+            background-size: cover; 
+            background-position: center;
+          }
+
+          &_text{
+            position: absolute; 
+            bottom: 50px; 
+            left: 50px; 
+            margin: 0; 
+            padding: 5px; 
+          }
+        }
+        &_right{
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          &_box{
+            position: relative; 
+            width: 600px;
+            height: 230px; 
+            overflow: hidden; 
+            transition: transform 0.2s ease-in-out;
+            &:hover {
+              transform: scale(1.05);
+            }
+
+            &_image{
+              width: 100%;
+              height: 100%;
+              background-size: cover; 
+              background-position: center;
+            }
+
+            &_text{
+              position: absolute; 
+              bottom: 25px; 
+              left: 25px; 
+              margin: 0;
+              padding: 5px; 
+            }
+          }
+        }
+      }
+    }
+
+    &__scie{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-left: 100px;
+      margin-right: 100px;
+      &_text{
+        margin-top: 40px;
+        :first-child{
+          margin-bottom: 10px;
+        }
+        :last-child{
+          margin-top: 20px;
+        }
+      }
+
+      &_title{
+        margin-top: 60px;
+      }
+
+
+      &_book{
+        margin-top: 50px;
+        display: flex;
+        gap: 35px;
+        // text-align: center;
+        // color: white;
+        
+
+        &_left{
+          display: grid;
+          grid-template-columns: 437px;
+          grid-template-rows: repeat(2, 250px);
+          
+          h2{
+            margin-top: 99px;
+          }
+          h3{
+            margin-top: 20px;
+          }
+        }
+
+        &_image{
+          width: 367px;
+          height: 494px;
+        }
+      }
+    }
+
+
+    &__ns{
+      margin-top: 40px;
+      color: white;
+
+      &_enter{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_left{
+          padding-top: 20px;
+          width: 420px;
+          height: 283px;
+          color: #0090D9;
+          background-color: white;
+          text-align: center;
+          align-items: center;
+
+          button{
+            margin-top: 40px;
+            width: 231px;
+            height: 84px;
+            color: #0090D9;
+            background-color: white;
+            border: solid 2px #0090D9;
+          }
+        }
+
+        h2{
+          margin-left: 80px;
+          width: 740px;
+          height: 114px;
+        }
+      }
+
+      &_map{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: white;
+        gap: 50px;
+
+        &_left{
+          width: 539px;
+          height: 576px;
+        }
+        &_right{
+          text-align: left;
+          width: 685px;
+          height: 368px;
+          display: flex;
+          flex-direction: column;
+
+          :first-child{
+            margin-bottom: 10px;
+          }
+
+          button{
+            margin-top: 67px;
+            width: 231px;
+            height: 84px;
+            color: white;
+            background-color: #0090D9;
+            border: solid 2px white;
+          }
+        }
+      }
+    }
+
+    &__title{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: left;
+      // margin-left: 100px;
+      // margin-right: 100px;
+      color: white;
+
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+
+    &__coop{
+      text-align: left;
+      margin-left: 100px;
+      margin-right: 100px;
+      color: white;
+
+
+      &_arch{
+        display: flex;
+
+        margin-top: 10px;
+        gap: 52px;
+        margin-bottom: 50px;
+      }
+
+
+      &_box{
+        margin-top: 50px;
+        width: 1240px;
+        height: 206px;
+        display: flex;
+        text-transform: uppercase;
+        align-items: center;
+        text-align: center;
+
+        &_block1{
+          width: 720px;
+          background-color: #59A68D;
+          height: 206px;
+
+        }
+        &_block2{
+          background-color: #FFFFFF;
+          width: 260px;
+          height: 206px;
+          color: #59A68D;
+        }
+        &_block3{
+          background-color: #59A68D;
+          width: 260px;
+          height: 206px;
+          color: white;
+        }
+        p{
+          padding-top: 93px;
+        }
+      }
+    }
+
+
+
+
+
+    &__lib{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      margin-left: 100px;
+      margin-right: 100px;
+      &_book{
+        margin-top: 50px;
+        display: flex;
+        gap: 35px;
+        // text-align: center;
+        // color: white;
+        
+
+        &_left{
+          display: grid;
+          grid-template-columns: 437px;
+          grid-template-rows: repeat(2, 250px);
+          text-align: left;
+          
+          h2{
+            margin-left: 125px;
+            margin-top: 80px;
+          }
+          h3{
+            margin-left: 17px;
+            margin-top: 20px;
+          }
+        }
+
+        &_image{
+          width: 367px;
+          height: 494px;
+        }
+      }
+
+
+      &_bottom{
+        margin-top: 50px;
+
+        h2{
+          span{
+            font-weight: bold;
+          }
+        }
+        &_grid{
+          margin-top: 50px;
+          display: grid;
+          grid-template-columns: 327px 400px 421px;
+          gap: 46px;
+          &_block{
+            background-color: white;
+            color: #0090D9;
+            border-radius: 30px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            h3{
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+
+
+    &__abus{
+      h1{
+        margin-left: 100px;
+        text-align: left;
+        color: white;
+      }
+      &_flex{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        gap: 50px;
+
+        &_block{
+          display: flex;
+          height: 100px;
+          flex-basis: 465px;
+          color: white;
+
+          img{
+            margin-right: 9px;
+          }
+          h3{
+            margin-top: 24px;
+          }
+          p{
+            margin-top: 5px;
+          }
+        }
+      }
+
+
+      &_bottom{
+        position: relative;
+        width: 1242px;
+        height: 399px;
+        margin-left: 100px;
+        margin-top: 50px;
+        // overflow: hidden;
+
+        &_inner{
+          padding-left: 50px;
+          padding-top: 30px;
+          // overflow: hidden;
+          position: absolute;
+          top: 173px;
+          left: 390px;
+          right: 50px;
+          background-color: #59A68D;
+          width: 749px;
+          height: 196px;
+          color: white;
+          text-align: left;
+          display: grid;
+          grid-template-columns: 304px 246px;
+          column-gap: 100px;
+          p{
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+    }
+
+
+    &__stud{
+      margin-left: 100px;
+      margin-right: 100px;
+
+      h1{
+        color: white;
+        text-align: left;
+
+      }
+      &_block{
+        margin-top: 50px;
+        width: 1240px;
+        height: 206px;
+        display: flex;
+        // position: relative;
+        text-align: left;
+        text-transform: uppercase;
+        p{
+          overflow: hidden;
+          transition: transform 0.2s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+
+        &_1{
+          width: 260px;
+          display: flex;
+          flex-direction: column;
+          
+          padding-top: 45px;
+          padding-left: 43px;
+          gap: 20px;
+          // position: absolute;
+          background-color: #59A68D;
+          color: white;
+          // top: 43px;
+        }
+        
+        &_2{
+          width: 260px;
+          display: flex;
+          flex-direction: column;
+          padding-top: 74px;
+          padding-left: 26px;
+          gap: 20px;
+          // position: absolute;
+          color: #59A68D;
+          background-color: white;
+        }
+      }
+      &_h1{
+        margin-top: 50px;
+      }
+    }
+}

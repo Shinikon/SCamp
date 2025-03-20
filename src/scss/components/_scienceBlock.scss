@@ -1,0 +1,32 @@
+.science-research-block {
+    display: grid;
+    grid-template-columns: repeat(4, 300px); /* Адаптивные колонки */
+    grid-gap: 13px; /* Отступ между ячейками */
+    padding-top: 20px; /* Общий отступ для блока */
+  
+    &__item {
+      height: 156px; /* Задайте желаемую высоту */
+      display: flex;
+      border-radius: 5px; /* Закругленные углы */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для блока */
+
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+    //   background-size: cover;
+    //   background-position: center;
+    //   color: white;
+  
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  
+    &__text {
+        text-align: left;
+        color: white;
+        margin: 20px; /* Отступ от верха и левого края */
+      
+    }
+  }

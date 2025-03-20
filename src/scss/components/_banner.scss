@@ -1,0 +1,32 @@
+.banner{
+    width: 1440px;
+    background: rgb(0,144,217);
+    background: linear-gradient( rgba(0,144,217,1) 0%, rgba(247,247,247,1) 100%);
+    &__container{
+        width: 1217px;
+        // height: 434px;
+        display: flex;
+        margin-left: 111px;
+        margin-top: 38px;
+        // margin-bottom: 105px;
+        padding-bottom: 105px;
+        &_box{
+            margin-top: 100px;
+            // margin-left: 40px;
+            text-transform: inherit;
+            &_title{
+                color: white;
+                span{
+                    color: #59A68D;
+                    background-color: white;
+                }
+                h1:first-child{
+                    margin-left: -250px;
+                }
+                h1:last-child{
+                    margin-left: 140px;
+                }
+            }
+        }
+    }
+}

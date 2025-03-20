@@ -1,0 +1,33 @@
+.text-block-with-list {
+  margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    padding: 20px;
+  
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        // align-items: center;
+    }
+  
+    &__title {
+        width: 350px;
+        height: 75px;
+        margin-bottom: 23px;
+        // margin: 0;
+        border: 3px solid #A6BA4C;
+    }
+  
+    &__list {
+      list-style: none;
+    }
+  
+    &__text {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+  }

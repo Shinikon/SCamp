@@ -1,0 +1,33 @@
+.aligned-text-block {
+    margin-top: 40px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3,  auto); /* 3 колонки */
+    grid-template-rows: repeat(2,  271px); /* 2 строки */ 
+    height: 542px; /* Задайте желаемую высоту контейнера */
+    // gap: 10px; /* Отступы между блоками */
+    // padding: 10px; /* Общий отступ для контейнера */
+  
+    &__item {
+      display: flex;
+      align-items: center; /* Выравнивание по вертикали */
+      justify-content: center; /* Выравнивание по горизонтали */
+      color: white; /* Цвет текста */
+      text-align: center; /* Выравнивание текста по центру */
+
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+  
+      &:hover {
+        border-radius: 5px;
+        transform: scale(1.05);
+      }
+    }
+  
+    &__text {
+      margin: 0; /* Убираем стандартные отступы для параграфа */
+      width: 307px;
+    }
+  }
